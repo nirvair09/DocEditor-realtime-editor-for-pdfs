@@ -24,7 +24,7 @@ const Editor = () => {
     const [quill, setQuill] = useState();
 
     useEffect(() => {
-        const sock = io("http://localhost:5000");
+        const sock = io("https://doceditor-realtime-editor-for-pdfs.onrender.com/");
         setSocket(sock);
 
         return () => {
